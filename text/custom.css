@@ -1,0 +1,45 @@
+
+body{
+font-family: 'Dosis', sans-serif;
+}
+section {
+    padding: 35px;
+
+}
+footer {
+    background: #03318C;
+    color: #D9B504;
+    margin-top: 4px;
+    padding: 20px;
+}
+h2, h3, h4 {
+    font-weight:px;
+}
+h5 {
+    color: red;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.animation {
+    animation-name: logo;
+    animation-duration:4s;
+    border: 4px solid red;
+    animation-iteration-count: infinite;
+}
+@keyframes logo {
+  0%   {border: 4px solid #E8000C;}
+  20%  {border: 4px solid #FF5E00;}
+  30%  {border: 4px solid #FFFF3B;}
+  40%  {border: 4px solid #0DD938;}
+  50%  {border: 4px solid #0071F0;}
+  60%  {border: 4px solid #023373;}
+  70%  {border: 4px solid #D90467;}
+  80%  {border: 4px solid #F24BA7;}
+  90%  {border: 4px solid #02732A;}
+  100% {border: 4px solid #F2E205;}
+}
+.img-border {
+   border: 4px #F2EDA2 solid;
+}
+footer, a:hover {
+}
