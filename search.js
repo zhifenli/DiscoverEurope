@@ -1,12 +1,12 @@
 var countryToCities = {
-    england: ["london", "oxford"],
-    france: ["paris"],
-    germany: [],
-    ireland: [],
-    italy: [],
-    scotland: [],
-    spain: [],
-    sweden: []
+    england: ["london", "oxford", "york", "bath", "cambridge", "liverpool", "stratford-upon-avon", "manchester"],
+    france: ["paris", "bordeaux", "lyon", "marseille", "nice", "strasbourg", "lille", "chamonix"],
+    germany: ["berlin", "munich", "frankfurt", "hamburg", "hanover", "stuttgart", "bremen", "dresden"],
+    ireland: ["dulin", "dingle town", "belfast" "cork city", "galeay", "derry", "kilkenny", "limerick" ],
+    italy: ["rome", "venice", "milan", "florence", "naples", "palermo", "siena", "turin"],
+    scotland: ["Edinburgh", "Glasgow", "Aberdeen", "St-Andrews", "Oban", "Inverness", "Kirkwall", "Stirling" ],
+    spain: ["barcelona", "madrid", "valencia", "seville", "granada", "bilbao", "malaga", "cordoba"],
+    sweden: ["stockholm", "gothenburg", "uppsala", "visby", "lund", "helsingborg", "ystad", "karlskrona"]
 };
 
 function getUrlOfCountry(country) {

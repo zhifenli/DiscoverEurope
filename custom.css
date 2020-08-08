@@ -6,24 +6,30 @@ article {
     padding: 35px;
 
 }
+li {
+    font-weight: bold;
+}
 footer {
     background: #03318C;
     color: #D9B504;
     margin-top: 4px;
     padding: 20px;
 }
-h2, h3, h4 {
-    font-weight:px;
+h1, h2, h3, h4 {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #0311FC!important;
+    text-align: center;
 }
 h5 {
-    color: red;
-    font-size: 20px;
+    color: #F00600;
     font-weight: 10px;
 }
 .animation {
     animation-name: logo;
     animation-duration:4s;
-    border: 4px solid red;
+    border: 15px solid red;
     animation-iteration-count: infinite;
 }
 @keyframes logo {
@@ -42,4 +48,7 @@ h5 {
    border: 4px #F2EDA2 solid;
 }
 footer, a:hover {
+}
+header p {
+    color: #F00600;
 }
