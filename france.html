@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;523;600;700;800&display=swap" rel="stylesheet">
-    <title>Spain-Discover europe</title>
+    <title>France-Discover europe</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,14 +29,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="england.html">England</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link " href="france.html">France</a>
+            <li class="nav-item active">
+                <a class="nav-link " href="france.html">France<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="germany.html">Germany</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="text/ireland.html">Ireland</a>
+                <a class="nav-link" href="ireland.html">Ireland</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="italy.html">Italy</a>
@@ -44,8 +44,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="scotland.html">Scotland</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="spain.html">Spain<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="spain.html">Spain</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="sweden.html" >Sweden</a>
@@ -54,10 +54,10 @@
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div class="form-inline my-2 my-lg-0" >
+            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="search()">Search</button>
+        </div>
     </div>
 </nav>
 <!--navbar-->
@@ -108,42 +108,44 @@
 <!--slide-->
 <article>
     <div class="container">
-        <h1>Spain</h1>
-        <p>Looking for a fresh, exciting country to visit? Consider Spain, a country full of culture and history. Enjoy beautiful music and dancing at one of the festivals or carnivals, watch the art of bullfighting, or spend your time at one of the many fantastic beaches. Spain is one of the more exotic European countries in terms of culture and food.</p>
-        <p>Spain boasts many cheerful and colorful festivals, great spectacles that differ from region to region. All Spanish cities such as Madrid and Barcelona have their own regional customs and traditions, as well as their own favorite foods. In Barcelona, for example, you can enjoy dishes such as La escudella i carn d'olla, a sort of stew made of vegetables, rice, noodles and potatoes, and the Postre del Musico, the &#8220;Musician&#8217;s Dessert.&#8221;</p>
-        <p>The entertainment in Spain, however, is not limited to traditional activities such as flamenco dancing and bullfighting &#8211; there is a very active night life populated by young people and visitors from all over the world. Residents of Valencia call the time between Friday evening and Sunday morning &#8220;la movida&#8221; &#8211; the moving time &#8211; and spend it accordingly, hanging out at the hottest bars and restaurants, enjoying music and dance, constantly on the move.</p>
-        <h3>CITIES IN SPAIN</h3>
+        <h1>France</h1>
+        <p>Bonjour! France is one of the most cultured and elegant places in the world&#8211;a place where old-fashioned buildings exist peacefully with new structures.</p>
+        <p>It&#8217;s a place for thinkers to discuss the finer points of life at little caf&eacute;s, and a place where the simple acts of cooking and eating have been made into art forms. Paris, the &#8220;City of Light,&#8221; has many elegant and world-famous attractions. </p>
+        <p>You&#8217;ll be amazed by the beauty of Notre-Dame, the Arc d&#8217;Triomphe, and of course, the Eiffel Tower. Be sure, of course, to visit the world-famous Louvre, where artistic treasures--Mona Lisa and the Venus de Milo--are on exhibit. End the day with dinner at a classy restaurant and enjoy the best of French cuisine.</p>
+        <p>While the city of Paris is a must-see, be sure not to miss the rest of France! The countryside and old-fashioned villages of France are quite charming. Larger cities such as Cannes and Lyon all have many fascinating sights and visits to them can be very rewarding. As for the countryside, where many French dream of living one day, it is simply gorgeous and enjoyable to travel through.</p>
+        <h3>CITIES IN FRANCE</h3>
+
         <div class="row no-gutters">
             <div class="col-6 col-sm-6 col-md-3">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Barcelona.jpg" class="card-img" alt="Barcelona">
+                    <img src="images/Paris.jpg" class="card-img" alt="Paris">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Barcelona</h5>
+                        <h5 class="card-title">Paris</h5>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-3">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Madrid.jpg" class="card-img" alt="Madrid">
+                    <img src="images/Bordeaux.jpg" class="card-img" alt="Bordeaux">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Madrid</h5>
+                        <h5 class="card-title">Bordeaux</h5>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-3 ">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Valencia.jpg" class="card-img " alt="Valencia">
+                    <img src="images/Lyon.jpg" class="card-img " alt="Lyon">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Valencia</h5>
+                        <h5 class="card-title">Lyon</h5>
                     </div>
                 </div>
             </div>
 
             <div class="col-6 col-sm-6 col-md-3 ">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Seville.jpg" class="card-img" alt="Seville">
+                    <img src="images/Marseille.jpg" class="card-img" alt="Marseille">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Seville</h5>
+                        <h5 class="card-title">Marseille</h5>
                     </div>
                 </div>
             </div>
@@ -152,34 +154,34 @@
         <div class="row no-gutters">
             <div class="col-6 col-sm-6 col-md-3">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Granada.jpg" class="card-img" alt="Granada">
+                    <img src="images/Nice.jpg" class="card-img" alt="Nice">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Granada</h5>
+                        <h5 class="card-title">Nice</h5>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-3">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Bilbao.jpg" class="card-img" alt="Bilbao">
+                    <img src="images/Strasbourg.jpg" class="card-img" alt="Strasbourg">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Bilbao</h5>
+                        <h5 class="card-title">Strasbourg</h5>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-md-3 ">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Malaga.jpg" class="card-img " alt="Malaga">
+                    <img src="images/Lille.jpg" class="card-img " alt="Lille">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Malaga</h5>
+                        <h5 class="card-title">Lille</h5>
                     </div>
                 </div>
             </div>
 
             <div class="col-6 col-sm-6 col-md-3 ">
                 <div class="card bg-dark text-white border-0 rounded-0">
-                    <img src="images/Cordoba.jpg" class="card-img" alt="Cordoba">
+                    <img src="images/Chamonix.jpg" class="card-img" alt="Chamonix">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Cordoba</h5>
+                        <h5 class="card-title">Chamonix</h5>
                     </div>
                 </div>
             </div>
@@ -220,5 +222,8 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+
+<script src="search.js"></script>
+
 </body>
 </html>
