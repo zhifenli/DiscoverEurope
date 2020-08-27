@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+          integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;523;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;523;600;700;800&display=swap"
+          rel="stylesheet">
     <title>Home-discover europe</title>
 </head>
 <body>
@@ -17,7 +19,8 @@
         <img src="logo/1.png" alt="" class="animation">
         <img src="logo/2.png" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -48,13 +51,13 @@
                 <a class="nav-link" href="spain.html">Spain</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="sweden.html" >Sweden</a>
+                <a class="nav-link " href="sweden.html">Sweden</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <div class="form-inline my-2 my-lg-0" >
+        <div class="form-inline my-2 my-lg-0">
             <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" onclick="search()">Search</button>
         </div>
@@ -107,25 +110,269 @@
 </header>
 <!--slide-->
 <article>
-    <h3>Our travel consultants are available to assist you:</h3>
+    <h3 class="text-left">Our travel consultants are available to assist you:</h3>
     <p>
-    - Monday - Friday <br>
-    6:00 a.m. - 6:00 p.m. MST<br>
-    - Saturday <br>
-    7:00 a.m. - 3:30 p.m. MST<br>
-    - Sunday <br>
-    7:00 a.m. - 3:30 p.m. MST
+        - Monday - Friday <br>
+        6:00 a.m. - 6:00 p.m. MST<br>
+        - Saturday <br>
+        7:00 a.m. - 3:30 p.m. MST<br>
+        - Sunday <br>
+        7:00 a.m. - 3:30 p.m. MST
     </p>
-    <h3>Call us at 800-555-5555.</h3>
-    <p>Feel free to e-mail us at <a href="mailto:info@discovereurope.com">info@discovereurope.com</a> if you need help planning your vacation, have a question about a current reservation or you just have some feedback or a suggestion you would like to share. We thank you in advance for your inquiry. Happy Travels!</p>
+    <h5 class="text-left">Call us at 800-555-5555.</h5>
+    <p>Feel free to e-mail us at <a href="mailto:info@discovereurope.com">info@discovereurope.com</a> if you need help
+        planning your vacation, have a question about a current reservation or you just have some feedback or a
+        suggestion you would like to share. We thank you in advance for your inquiry. Happy Travels!</p>
 
+    <form action="https://formspree.io/xqkyjgvr" method="POST">
+        <h3 class="text-left">Contact Us</h3>
+        <!--name-->
+        <div class="form-group row">
+            <label for="inputFirstName" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" name="first-name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputLastName" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" name="Last-name" required>
+            </div>
+        </div>
+        <!--email,phone-->
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="Email" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="inputPhone" placeholder="Phone" name="Phone">
+            </div>
+        </div>
+        <!--student-->
+        <fieldset class="form-group">
+            <div class="row">
+                <div class="col-form-label col-sm-2 pt-0">Student</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="student" id="studentYes" value="option1"
+                               checked>
+                        <label class="form-check-label" for="studentYes">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="student" id="studentNo" value="option2">
+                        <label class="form-check-label" for="studentNo">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--under age 26-->
+        <fieldset class="form-group">
+            <div class="row">
+                <div class="col-form-label col-sm-2 pt-0">Under age 26</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="age" id="ageUnder26" value="option1" checked>
+                        <label class="form-check-label" for="ageUnder26">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="age" id="ageAbove26" value="option2">
+                        <label class="form-check-label" for="ageAbove26">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--interests-->
+        <div class="form-group row">
+            <div class="col-sm-2">Interests</div>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="artCheck1" name="Art">
+                    <label class="form-check-label" for="artCheck1">
+                        Art
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="historyCheck1" name="History">
+                    <label class="form-check-label" for="historyCheck1">
+                        History
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hikingCheck1" name="Hiking">
+                    <label class="form-check-label" for="hikingCheck1">
+                        Hiking
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="FoodCheck1" name="Food">
+                    <label class="form-check-label" for="FoodCheck1">
+                        Food
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="LanguageCheck1" name="Language">
+                    <label class="form-check-label" for="LanguageCheck1">
+                        Language
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--interests-->
+
+        <!--destination-->
+        <div class="form-group row">
+            <label for="inlineFormCustomSelectPref" class="col-sm-2 col-form-label">Destination</label>
+            <select class="custom-select col-sm-10  " id="inlineFormCustomSelectPref" required name="Destination">
+                <option selected>Choose...</option>
+                <option value="1">London</option>
+                <option value="2">Oxford</option>
+                <option value="3">York</option>
+                <option value="1">Bath</option>
+                <option value="2">Cambridge</option>
+                <option value="3">Liverpool</option>
+                <option value="1">Stratford-upon-Avon</option>
+                <option value="2">Manchester</option>
+                <option value="3">Paris</option>
+                <option value="1">Bordeaux</option>
+                <option value="2">Lyon</option>
+                <option value="3">Marseille</option>
+                <option value="1">Nice</option>
+                <option value="2">Strasbourg</option>
+                <option value="3">Lille</option>
+                <option value="1">Chamonix</option>
+                <option value="2">Berlin</option>
+                <option value="3">Munich</option>
+                <option value="1">Frankfurt</option>
+                <option value="2">Hamburg</option>
+                <option value="3">Hanover</option>
+                <option value="1">Stuttgart</option>
+                <option value="2">Bremen</option>
+                <option value="3">Dresden</option>
+                <option value="1">Dublin</option>
+                <option value="2">Dingle-Town</option>
+                <option value="3">Belfast</option>
+                <option value="1">Cork-City</option>
+                <option value="2">Galway-City</option>
+                <option value="3">Derry</option>
+                <option value="1">Kilkenny</option>
+                <option value="2">Limerick</option>
+                <option value="3">Rome</option>
+                <option value="1">Venice</option>
+                <option value="2">Milan</option>
+                <option value="3">Horence</option>
+                <option value="1">Naples</option>
+                <option value="2">Palermo</option>
+                <option value="3">Siena</option>
+                <option value="1">Turin</option>
+                <option value="2">Edinburgh</option>
+                <option value="3">glasgow</option>
+                <option value="1">Aberdeen</option>
+                <option value="2">St-Andrews</option>
+                <option value="3">Oban</option>
+                <option value="1">Inverness</option>
+                <option value="2">Kirkwall</option>
+                <option value="3">Stirling</option>
+                <option value="1">Barcelona</option>
+                <option value="2">Madrid</option>
+                <option value="3">Valencia</option>
+                <option value="1">Seville</option>
+                <option value="2">Granada</option>
+                <option value="3">Bilbao</option>
+                <option value="1">Malaga</option>
+                <option value="2">Cordoba</option>
+                <option value="3">Stockholm</option>
+                <option value="1">Gothenburg</option>
+                <option value="2">Uppsala</option>
+                <option value="3">Visby</option>
+                <option value="1">Lund</option>
+                <option value="2">Helsingborg</option>
+                <option value="3">Ystad</option>
+                <option value="1">Karlskrona</option>
+            </select>
+        </div>
+        <!--Ideal departure date-->
+        <div class="form-group row">
+            <label for="departureDate" class="col-sm-2 col-form-label">Ideal departure date</label>
+            <input type="datetime-local" class="col-sm-2 col-form-label" id="departureDate"
+                   name="departure-time" value="2018-06-12T19:30"
+                   min="2018-06-07T00:00" max="2018-06-14">
+        </div>
+        <!--Ideal return date-->
+        <div class="form-group row">
+            <label for="departReturnDate" class="col-sm-2 col-form-label">Ideal return date</label>
+            <input type="datetime-local" class="col-sm-2 col-form-label" id="departReturnDate"
+                   name="return-time" value="2020-08-12T19:30"
+                   min="2018-08-12T00:00" max="2021-08-14">
+        </div>
+        <!--Ideal departure date-->
+        <div class="form-group row">
+            <label for="IdealDepartureAirport" class="col-sm-2 col-form-label">Ideal departure airport</label>
+            <select class="custom-select col-sm-10  " id="IdealDepartureAirport" required name="departure airport">
+                <option selected>Choose...</option>
+                <option value="1">London Luton Airport</option>
+                <option value="1">London Heathrow Airport</option>
+                <option value="1">London Stansted Airport</option>
+                <option value="1">London City Airport</option>
+                <option value="1">London-Southend Airport</option>
+                <option value="1">London Luton Airport</option>
+                <option value="1">Paris-charles Airport</option>
+                <option value="1">Orly Airport</option>
+                <option value="1">Lyon-Saint Exupery Airport</option>
+                <option value="1">Bordeaux Airport</option>
+                <option value="1">Marseille provence Airport</option>
+                <option value="1">Euro Airport</option>
+                <option value="1">Frankfurt Airport</option>
+                <option value="1">Munich Airport</option>
+                <option value="1">Dusseldorf Airport</option>
+                <option value="1">Cologne-Bonn Airport</option>
+                <option value="1">Hamburg Airport</option>
+                <option value="1">Stuttgart Airport</option>
+                <option value="1">Dublin Airport</option>
+                <option value="1">Cork Airport</option>
+                <option value="1">Shannon Airport</option>
+                <option value="1">Knock Airport</option>
+                <option value="1">Malpensa Airport</option>
+                <option value="1">Leonardo da Vinci Airport</option>
+                <option value="1">Milan Linate Airport</option>
+                <option value="1">Venice Marco Airport</option>
+                <option value="1">Naples International Airport</option>
+                <option value="1">Stuttgart Airport</option>
+                <option value="1">Dublin Airport</option>
+                <option value="1">Cork Airport</option>
+            </select>
+        </div>
+
+        <div class="form-group row">
+            <label for="inputComments" class="col-sm-2 col-form-label">Comments</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="inputComments" placeholder="Comments" name="Comments"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary my-1">Submit</button>
+
+    </form>
 </article>
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-6 col-sm-6 col-md-3">
                 <p>Call us at 800-555-5555.</p>
-                <p>Feel free to e-mail us at <a href="mailto:info@discovereurope.com">info@discovereurope.com</a> if you need help planning your vacation, have a question about a current reservation or you just have some feedback or a suggestion you would like to share. We thank you in advance for your inquiry. Happy Travels!</p>
+                <p>Feel free to e-mail us at <a href="mailto:info@discovereurope.com">info@discovereurope.com</a> if you
+                    need help planning your vacation, have a question about a current reservation or you just have some
+                    feedback or a suggestion you would like to share. We thank you in advance for your inquiry. Happy
+                    Travels!</p>
             </div>
             <div class="col-6 col-sm-6 col-md-3">
                 <p>Our travel consultants are available to assist you:<br>
@@ -150,9 +397,15 @@
 </footer>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script>
 <script src="search.js"></script>
 </body>
 </html>
